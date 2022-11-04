@@ -1,0 +1,78 @@
+:root {
+    --default-font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans", "sans-serif";
+}
+
+body {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h2{
+    margin-top: 3rem;
+}
+
+p {
+    font-weight: 400;
+}
+
+code {
+    background-color: #e6e6e6;
+    color: tomato;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+main {
+    margin: auto;
+    width: 60vw;
+}
+
+input {
+    margin: auto 6px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.flex * {
+    flex-basis: 100%;
+}
+
+.flex > div:first-child {
+    border: solid 2px #e6e6e6;
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+
+.flex > div:first-child {
+    max-height: 300px;
+    overflow: scroll;
+}
+
+article section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: solid 1px black;
+}
+
+article section:last-child {
+    border-bottom: none;
+}

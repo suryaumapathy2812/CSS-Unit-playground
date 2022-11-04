@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div>
+            <h1>CSS Units</h1>
+            <p>A CSS unit determines the size of a property you’re setting for an element or its content. For example,
+                if you wanted to set the property margin of a paragraph, you would give it a specific value. This value
+                includes the CSS unit.
+            </p>
+
+            <code>
+                p {
+                    margin: 20px;
+                }
+            </code>
+
+            <p>
+                In this case, <code>margin</code> is the property, <code>20px</code> is the value, and <code> px </code>
+                (or Pixel) is the CSS unit.
+            </p>
+
+        </div>
+
+        <article>
+
+            <section id="unit-absolute">
+                <h2>Absolute Units</h2>
+
+                <p>
+                    Units that are “absolute” are the same size regardless of the parent element or window size. This
+                    means a property set with a value that has an absolute unit will be that size when looked at on a
+                    phone or on a large monitor (and everything in between!)
+                </p>
+
+                <p>Note: Absolute units can be less favorable for responsible sites</p>
+
+                <!-- Pixel -->
+                <div>
+                    <h3> Pixel (px) </h3>
+                    <div class="flex">
+                        <div>
+                            <!-- <h4> Heading </h4> -->
+                            <p class="unit-px">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius et
+                                hic
+                                porro? Minima animi assumenda repellat, sequi inventore illum corrupti aspernatur?
+                                Magnam
+                                distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="unit-input-px"> <code>{ font-size : " </code></label>
+                            <input type="number" class="unit-input" id="unit-input-px" data-target="unit-px">
+                            <code>px";  }</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point -->
+                <div>
+                    <h3> Point (pt) </h3>
+                    <div class="flex">
+                        <div>
+                            <!-- <h4> Heading </h4> -->
+                            <p class="unit-pt">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius et
+                                hic
+                                porro? Minima animi assumenda repellat, sequi inventore illum corrupti aspernatur?
+                                Magnam
+                                distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="unit-input-pt"> <code>{ font-size : " </code></label>
+                            <input type="number" class="unit-input" id="unit-input-pt" data-target="unit-pt">
+                            <code>pt";  }</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Picas -->
+                <div>
+                    <h3> Picas (pc) </h3>
+                    <div class="flex">
+                        <div>
+                            <!-- <h4> Heading </h4> -->
+                            <p class="unit-pc">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius et
+                                hic
+                                porro? Minima animi assumenda repellat, sequi inventore illum corrupti aspernatur?
+                                Magnam
+                                distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="unit-input-pc"> <code>{ font-size : " </code></label>
+                            <input type="number" class="unit-input" id="unit-input-pc" data-target="unit-pc">
+                            <code>pc";  }</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Centimeter -->
+                <div>
+                    <h3> Centimeter (cm) </h3>
+                    <div class="flex">
+                        <div>
+                            <!-- <h4> Heading </h4> -->
+                            <p class="unit-cm">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius et
+                                hic
+                                porro? Minima animi assumenda repellat, sequi inventore illum corrupti aspernatur?
+                                Magnam
+                                distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="unit-input-cm"> <code>{ font-size : " </code></label>
+                            <input type="number" class="unit-input" id="unit-input-cm" data-target="unit-cm">
+                            <code>cm";  }</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Millimeter -->
+                <div>
+                    <h3> Millimeter (mm) </h3>
+                    <div class="flex">
+                        <div>
+                            <!-- <h4> Heading </h4> -->
+                            <p class="unit-mm">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius et
+                                hic porro? Minima animi assumenda repellat, sequi inventore illum corrupti aspernatur?
+                                Magnam distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="unit-input-mm"> <code>{ font-size : " </code></label>
+                            <input type="number" class="unit-input" id="unit-input-mm" data-target="unit-mm">
+                            <code>mm";  }</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inches -->
+                <div>
+                    <h3> Inches (in) </h3>
+                    <div class="flex">
+                        <div>
+                            <!-- <h4> Heading </h4> -->
+                            <p class="unit-in">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius et
+                                hic porro? Minima animi assumenda repellat, sequi inventore illum corrupti aspernatur?
+                                Magnam distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="unit-input-in"> <code>{ font-size : " </code></label>
+                            <input type="number" class="unit-input" id="unit-input-in" data-target="unit-in">
+                            <code>in";  }</code>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- <section>
+                <h2>Relative Units</h2>
+
+                <p>
+                    Relative Units are useful for styling responsive sites because they scale relative to the parent or
+                    window size
+                </p>
+
+                <p>
+                    As a general rule, Relative units can be used as the default for responsive sites.
+                </p>
+            </section> -->
+
+
+        </article>
+
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
