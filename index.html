@@ -219,6 +219,215 @@
 
         </article>
 
+
+        <article>
+
+            <section id="unit-relative">
+                <h2>Relative Units</h2>
+
+                <p>
+                    Relative length units are relative to something else, perhaps the size of the parent element's font,
+                    or the size of the viewport.
+                </p>
+
+                <!-- Emphemeral -->
+                <div>
+                    <h3> Ephemeral Unit (em) </h3>
+                    <p> Relative to the font-size of the element (2em means 2 times the size of the current font) </p>
+                    <div class="flex">
+                        <div class="parent-unit-em">
+                            <!-- <h4> Heading </h4> -->
+                            <p class="child-unit-em">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius et
+                                hic porro? Minima animi assumenda repellat, sequi inventore illum corrupti aspernatur?
+                                Magnam distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="unit-input-em"> <code>.parent { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-em" data-level="parent"
+                                    data-target="parent-unit-em">
+                                <code>em";  }</code>
+                            </div>
+                            <div>
+                                <label for="unit-input-em"> <code>.child { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-em" data-level="child"
+                                    data-target="child-unit-em">
+                                <code>em";  }</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Root em -->
+                <div>
+                    <h3> Root em (rem) </h3>
+                    <p> a unit of measurement that represents the font size of the root element. This means that 1rem
+                        equals the font size of the html element, which for most browsers has a default value of 16px
+                    </p>
+                    <div class="flex">
+                        <div class="parent-unit-rem">
+                            <!-- <h4> Heading </h4> -->
+                            <p class="child-unit-rem">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius
+                                et
+                                hic
+                                porro? Minima animi assumenda repellat, sequi inventore illum corrupti aspernatur?
+                                Magnam
+                                distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="unit-input-rem"> <code>.parent { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-rem" data-level="parent"
+                                    data-target="parent-unit-rem">
+                                <code>rem";  }</code>
+                            </div>
+                            <div>
+                                <label for="unit-input-em"> <code>.child { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-rem" data-level="child"
+                                    data-target="child-unit-rem">
+                                <code>rem";  }</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Character -->
+                <div>
+                    <h3> character (ch) </h3>
+                    <p> The ch unit sets the font-size relative to the width of the character "0" (Zero) </p>
+                    <div class="flex">
+                        <div class="parent-unit-ch">
+                            <!-- <h4> Heading </h4> -->
+                            <p class="child-unit-ch">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius
+                                et hic porro? Minima animi assumenda repellat, sequi inventore illum corrupti
+                                aspernatur? Magnam distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="unit-input-ch"> <code>.parent { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-ch" data-level="parent"
+                                    data-target="parent-unit-ch">
+                                <code>ch";  }</code>
+                            </div>
+                            <div>
+                                <label for="unit-input-ch"> <code>.child { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-ch" data-level="child"
+                                    data-target="child-unit-ch">
+                                <code>ch";  }</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Viewport Width -->
+                <div>
+                    <h3> Viewport Width (vw) </h3>
+                    <p> Relative to 1% of the width of the viewport </p>
+                    <div class="flex">
+                        <div class="parent-unit-vw">
+                            <!-- <h4> Heading </h4> -->
+                            <p class="child-unit-vw">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius
+                                et hic porro? Minima animi assumenda repellat, sequi inventore illum corrupti
+                                aspernatur? Magnam distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <!-- <label for="unit-input-vw"> <code>.parent { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-vw" data-level="parent"
+                                    data-target="parent-unit-vw">
+                                <code>vw";  }</code> -->
+                            </div>
+                            <div>
+                                <label for="unit-input-vw"> <code>.child { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-vw" data-level="child"
+                                    data-target="child-unit-vw">
+                                <code>vw";  }</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Viewport Height -->
+                <div>
+                    <h3> Viewport Height (vh) </h3>
+                    <p> Relative to 1% of the height of the viewport </p>
+                    <div class="flex">
+                        <div zclass="parent-unit-vh">
+                            <!-- <h4> Heading </h4> -->
+                            <p class="child-unit-vh">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius
+                                et hic porro? Minima animi assumenda repellat, sequi inventore illum corrupti
+                                aspernatur? Magnam distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <!-- <label for="unit-input-vh"> <code>.parent { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-vh" data-level="parent"
+                                    data-target="parent-unit-vh">
+                                <code>vh";  }</code> -->
+                            </div>
+                            <div>
+                                <label for="unit-input-vh"> <code>.child { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-vh" data-level="child"
+                                    data-target="child-unit-vh">
+                                <code>vh";  }</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Percentage -->
+                <div>
+                    <h3> Percentage (%) </h3>
+                    <p> Relative to the parent element </p>
+                    <div class="flex">
+                        <div class="parent-unit-px">
+                            <!-- <h4> Heading </h4> -->
+                            <p class="child-unit-%">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis, veniam eius
+                                et
+                                hic porro? Minima animi assumenda repellat, sequi inventore illum corrupti
+                                aspernatur?
+                                Magnam distinctio omnis commodi quis magni?
+                            </p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="unit-input-%"> <code>.parent { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-%" data-level="parent"
+                                    data-target="parent-unit-px">
+                                <code>px";  }</code>
+                            </div>
+                            <div>
+                                <label for="unit-input-%"> <code>.child { font-size : " </code></label>
+                                <input type="number" class="unit-input" id="unit-input-%" data-level="child"
+                                    data-target="child-unit-%">
+                                <code>%";  }</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </article>
+
     </main>
 
 

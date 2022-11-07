@@ -1,5 +1,5 @@
 :root {
-    --default-font-size: 16px;
+    --default-font-size: 100%;
 }
 
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: var(--default-font-size);
 }
 
 h1,
@@ -20,7 +20,7 @@ h6 {
     font-weight: 600;
 }
 
-h2{
+h2 {
     margin-top: 3rem;
 }
 
@@ -37,7 +37,7 @@ code {
 
 main {
     margin: auto;
-    width: 60vw;
+    width: 70vw;
 }
 
 input {
@@ -75,4 +75,22 @@ article section {
 
 article section:last-child {
     border-bottom: none;
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --default-font-size: 100%;
+    }
+
+    body {
+        font-size: var(--default-font-size);
+    }
+
+    main{
+        width: 100vw;
+    }
+
+    .flex{
+        flex-wrap: wrap;
+    }
 }
