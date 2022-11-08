@@ -72,5 +72,5 @@ if (typeof window.innerWidth != 'undefined') {
         viewPortHeight = window.innerHeight
 }
 
-console.log("Viewport Weight ==> " + viewPortWidth)
+console.log("Viewport Width ==> " + viewPortWidth)
 console.log("Viewport Height ==> " + viewPortHeight)
